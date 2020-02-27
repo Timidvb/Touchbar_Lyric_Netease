@@ -34,3 +34,13 @@ PROXY：开启解锁网易云服务则需要代理绕开解锁代理
 LOGPATH：网易云音乐log地址
 
     Users/yourname/Library/Containers/com.netease.163music/Data/Documents/storage/Logs/music.163.log
+    
+如有安装失败请检查pip依赖
+    
+缺少Crypto
+
+    pip3 install pycrypto
+    
+requests不支持socks代理
+    
+    pip3 install -U 'requests[socks]'
